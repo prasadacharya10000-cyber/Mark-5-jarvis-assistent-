@@ -1,81 +1,57 @@
-# 🤖 MARK XXXIX (39)
-### The Ultimate Cross-Platform Personal AI Assistant — By FatihMakes
+# Mark XXXIX — AI Desktop Assistant
 
-> 📺 **[Watch the full setup video on YouTube](https://youtu.be/ej1f5OE3SNQ?si=lCxDhJix9ungq1Ry)**
+A modular, Iron Man-inspired AI desktop assistant with ML-based intent classification, browser automation, file management, and a suite of productivity actions.
 
-A real-time voice AI that can hear, see, understand, and control your computer — on any OS. Supporting Windows, macOS, and Linux. Local execution. Zero subscriptions. Engineered for total autonomy.
+## Features
+- ML intent classifier trained on Kaggle dataset for natural language understanding
+- Browser control and automation
+- File processing and file controller
+- Flight finder
+- YouTube video search and automation
+- Weather reports
+- Reminders and task management
+- Code helper and dev agent
+- Desktop and computer control
+- WhatsApp/message sending
+- Screen processor
 
----
+## Tech Stack
+Python · LLMs · NLP · scikit-learn · PyAutoGUI · Selenium · Transformers
 
-## ✨ Overview
+## Project Structure
+```
+mark-xxxix/
+├── main.py              ← Entry point
+├── ui.py                ← Desktop UI
+├── actions/             ← All action modules
+│   ├── browser_control.py
+│   ├── file_processor.py
+│   ├── flight_finder.py
+│   ├── intent_classifier.py
+│   └── ...
+├── agent/               ← Planner, executor, task queue
+├── ml/                  ← Intent model and training data
+├── memory/              ← Memory and config manager
+└── core/                ← Prompt config
+```
 
-MARK XXXIX represents the pinnacle of the Jarvis series, evolving into a more flexible and robust system. It bridges the gap between the operating system and human intent. Through natural dialogue, Mark 39 analyzes your screen, processes uploaded documents, and executes complex workflows with a brand-new, adaptive interface.
+## Getting Started
 
-It's not just an assistant — it's an extension of your digital life.
-
----
-
-## 🚀 Capabilities
-
-### Core Features
-| Feature | Description |
-|---|---|
-| 🎙️ Real-time Voice | Ultra-low latency conversation in any language |
-| 🖥️ System Control | Launch apps, manage files, execute terminal commands |
-| 🧩 Autonomous Tasks | High-level planning for complex, multi-step goals |
-| 👁️ Visual Awareness | Real-time screen processing and webcam vision |
-| 🧠 Persistent Memory | Deeply remembers your projects, preferences, and personal context |
-| ⌨️ Hybrid Input | Seamlessly switch between keyboard typing and voice commands |
-
----
-
-## 🆕 What's New in XXXIX
-
-- 📂 **Advanced File Handling** — New support for direct file uploads. Drop PDFs, source code, or images into the assistant to have them analyzed, summarized, or edited instantly.
-- 🎨 **Adaptive & Flexible UI** — A complete overhaul of the interface. The new UI is fully resizable and responsive, featuring transparency controls and customizable layouts to fit your workspace perfectly.
-- 🐧🍎 **Refined Cross-Platform Stability** — Major fixes for macOS and Linux compatibility. Core system actions are now more consistent across all three major operating systems.
-- ⚡ **Optimized Core Engine** — Significant performance boost in tool-calling logic and response generation, resulting in a 40% faster interaction speed.
-
----
-
-## ⚡ Quick Start
-
+### Installation
 ```bash
-git clone https://github.com/FatihMakes/Mark-XXXIX.git
-cd Mark-XXXIX
+git clone https://github.com/prasadacharya10000-cyber/mark-xxxix-ai-assistant.git
+cd mark-xxxix-ai-assistant
 pip install -r requirements.txt
-playwright install
+python setup.py
+```
+
+### Run
+```bash
 python main.py
 ```
 
-> ⚠️ **Installation Note:** To keep the repository lightweight, some OS-specific dependencies are not bundled in `requirements.txt`. If you run into a `ModuleNotFoundError`, simply install the missing package via `pip install <module_name>` for your specific system.
-
----
-
-## 📋 Requirements
-
-| Requirement | Details |
-|---|---|
-| **OS** | Windows 10/11, macOS, or Linux |
-| **Python** | 3.11 or 3.12 |
-| **Microphone** | Required for voice interaction |
-| **API Key** | Free Gemini API key |
-
----
-
-## ⚠️ License
-
-Personal and non-commercial use only.
-Licensed under **[Creative Commons BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)**.
-
----
-
-## 👤 Connect with the Creator
-
-Engineered by a developer building a real-world JARVIS-style assistant.
-⭐ **Star the repository to support the journey to Mark 100.**
-
-| Platform | Link |
-|---|---|
-| YouTube | [@FatihMakes](https://www.youtube.com/@FatihMakes) |
-| Instagram | [@fatihmakes](https://www.instagram.com/fatihmakes) |
+## Intent Classification
+The assistant uses a Kaggle-trained ML model (`ml/intent_model.pkl`) to classify user commands into actions. To retrain:
+```bash
+python ml/train_intent_model.py
+```
