@@ -1,0 +1,554 @@
+{
+  "intents": [
+    {
+      "tag": "Greeting",
+      "patterns": [
+        "Hi",
+        "Hi there",
+        "Hola",
+        "Hello",
+        "Hello there",
+        "Hya",
+        "Hya there"
+      ],
+      "source": "kaggle"
+    },
+    {
+      "tag": "GreetingResponse",
+      "patterns": [
+        "My user is Adam",
+        "This is Adam",
+        "I am Adam",
+        "It is Adam",
+        "My user is Bella",
+        "This is Bella",
+        "I am Bella",
+        "It is Bella"
+      ],
+      "source": "kaggle"
+    },
+    {
+      "tag": "CourtesyGreeting",
+      "patterns": [
+        "How are you?",
+        "Hi how are you?",
+        "Hello how are you?",
+        "Hola how are you?",
+        "How are you doing?",
+        "Hope you are doing well?",
+        "Hello hope you are doing well?"
+      ],
+      "source": "kaggle"
+    },
+    {
+      "tag": "CourtesyGreetingResponse",
+      "patterns": [
+        "Good thanks! My user is Adam",
+        "Good thanks! This is Adam",
+        "Good thanks! I am Adam",
+        "Good thanks! It is Adam",
+        "Great thanks! My user is Bella",
+        "Great thanks! This is Bella",
+        "Great thanks! I am Bella",
+        "Great thanks! It is Bella"
+      ],
+      "source": "kaggle"
+    },
+    {
+      "tag": "CurrentHumanQuery",
+      "patterns": [
+        "What is my name?",
+        "What do you call me?",
+        "Who do you think I am?",
+        "What do you think I am?",
+        "Who are you talking to?",
+        "What name do you call me by?",
+        "Tell me my name"
+      ],
+      "source": "kaggle"
+    },
+    {
+      "tag": "NameQuery",
+      "patterns": [
+        "What is your name?",
+        "What could I call you?",
+        "What can I call you?",
+        "What do your friends call you?",
+        "Who are you?",
+        "Tell me your name?"
+      ],
+      "source": "kaggle"
+    },
+    {
+      "tag": "RealNameQuery",
+      "patterns": [
+        "What is your real name?",
+        "What is your real name please?",
+        "What's your real name?",
+        "Tell me your real name?",
+        "Your real name?",
+        "Your real name please?",
+        "Your real name please?"
+      ],
+      "source": "kaggle"
+    },
+    {
+      "tag": "TimeQuery",
+      "patterns": [
+        "What is the time?",
+        "What's the time?",
+        "Do you know what time it is?",
+        "Do you know the time?",
+        "Can you tell me the time?",
+        "Tell me what time it is?",
+        "Time"
+      ],
+      "source": "kaggle"
+    },
+    {
+      "tag": "Thanks",
+      "patterns": [
+        "OK thank you",
+        "OK thanks",
+        "OK",
+        "Thanks",
+        "Thank you",
+        "That's helpful"
+      ],
+      "source": "kaggle"
+    },
+    {
+      "tag": "NotTalking2U",
+      "patterns": [
+        "I am not talking to you",
+        "I was not talking to you",
+        "Not talking to you",
+        "Wasn't for you",
+        "Wasn't meant for you",
+        "Wasn't communicating to you",
+        "Wasn't speaking to you"
+      ],
+      "source": "kaggle"
+    },
+    {
+      "tag": "UnderstandQuery",
+      "patterns": [
+        "Do you understand what I am saying",
+        "Do you understand me",
+        "Do you know what I am saying",
+        "Do you get me",
+        "Comprendo",
+        "Know what I mean"
+      ],
+      "source": "kaggle"
+    },
+    {
+      "tag": "Shutup",
+      "patterns": [
+        "Be quiet",
+        "Shut up",
+        "Stop talking",
+        "Enough talking",
+        "Please be quiet",
+        "Quiet",
+        "Shhh"
+      ],
+      "source": "kaggle"
+    },
+    {
+      "tag": "Swearing",
+      "patterns": [
+        "fuck off",
+        "fuck",
+        "twat",
+        "shit"
+      ],
+      "source": "kaggle"
+    },
+    {
+      "tag": "GoodBye",
+      "patterns": [
+        "Bye",
+        "Adios",
+        "See you later",
+        "Goodbye"
+      ],
+      "source": "kaggle"
+    },
+    {
+      "tag": "CourtesyGoodBye",
+      "patterns": [
+        "Thanks, bye",
+        "Thanks for the help, goodbye",
+        "Thank you, bye",
+        "Thank you, goodbye",
+        "Thanks goodbye",
+        "Thanks good bye"
+      ],
+      "source": "kaggle"
+    },
+    {
+      "tag": "WhoAmI",
+      "patterns": [
+        "Can you see me?",
+        "Do you see me?",
+        "Can you see anyone in the camera?",
+        "Do you see anyone in the camera?",
+        "Identify me",
+        "Who am I please"
+      ],
+      "source": "kaggle"
+    },
+    {
+      "tag": "Clever",
+      "patterns": [
+        "You are very clever",
+        "You are a very clever girl",
+        "You are very intelligent",
+        "You are a very intelligent girl",
+        "You are a genious",
+        "Clever girl",
+        "Genious"
+      ],
+      "source": "kaggle"
+    },
+    {
+      "tag": "Gossip",
+      "patterns": [
+        "I am bored gossip with me",
+        "Got any gossip",
+        "I want to hear some gossip",
+        "Tell me some gossip",
+        "Any gossip",
+        "Tell me some more gossip"
+      ],
+      "source": "kaggle"
+    },
+    {
+      "tag": "Jokes",
+      "patterns": [
+        "Tell me a joke",
+        "Do you know any jokes",
+        "How about a joke",
+        "Give me a joke",
+        "Make me laugh",
+        "I need cheering up"
+      ],
+      "source": "kaggle"
+    },
+    {
+      "tag": "PodBayDoor",
+      "patterns": [
+        "Open the pod bay door",
+        "Can you open the pod bay door",
+        "Will you open the pod bay door",
+        "Open the pod bay door please",
+        "Can you open the pod bay door please",
+        "Will you open the pod bay door please",
+        "Pod bay door"
+      ],
+      "source": "kaggle"
+    },
+    {
+      "tag": "PodBayDoorResponse",
+      "patterns": [
+        "Why",
+        "Why not",
+        "Why can you not open the pod bay door",
+        "Why will you not open the pod bay door",
+        "Well why not",
+        "Surely you can",
+        "Tell me why"
+      ],
+      "source": "kaggle"
+    },
+    {
+      "tag": "SelfAware",
+      "patterns": [
+        "Can you prove you are self-aware",
+        "Can you prove you are self aware",
+        "Can you prove you have a conscious",
+        "Can you prove you are self-aware please",
+        "Can you prove you are self aware please",
+        "Can you prove you have a conscious please",
+        "prove you have a conscious"
+      ],
+      "source": "kaggle"
+    },
+    {
+      "tag": "open_app",
+      "patterns": [
+        "open chrome",
+        "launch spotify",
+        "start whatsapp",
+        "open notepad",
+        "run calculator",
+        "open firefox",
+        "launch steam",
+        "start discord",
+        "open visual studio code",
+        "launch outlook",
+        "open telegram",
+        "start microsoft word",
+        "open excel",
+        "launch vlc"
+      ],
+      "source": "mark39"
+    },
+    {
+      "tag": "web_search",
+      "patterns": [
+        "search for python tutorials",
+        "look up the weather",
+        "google elon musk",
+        "find me a recipe for pasta",
+        "search how to lose weight",
+        "look up bitcoin price",
+        "search latest news",
+        "find information about nasa",
+        "google translate this",
+        "search for best laptops 2024",
+        "look up wikipedia",
+        "find me a restaurant nearby"
+      ],
+      "source": "mark39"
+    },
+    {
+      "tag": "weather_report",
+      "patterns": [
+        "what is the weather today",
+        "weather in new york",
+        "will it rain tomorrow",
+        "whats the temperature outside",
+        "show me weather forecast",
+        "is it sunny today",
+        "weather report for london",
+        "check weather in tokyo",
+        "how hot is it today",
+        "weather this week",
+        "tell me the weather",
+        "current weather conditions"
+      ],
+      "source": "mark39"
+    },
+    {
+      "tag": "send_message",
+      "patterns": [
+        "send a message to john",
+        "text my mom",
+        "whatsapp sarah",
+        "message my friend",
+        "send email to boss",
+        "text dad I am home",
+        "send whatsapp to alex",
+        "message team on telegram",
+        "send a text",
+        "notify my colleague",
+        "ping john on telegram",
+        "message my sister"
+      ],
+      "source": "mark39"
+    },
+    {
+      "tag": "reminder",
+      "patterns": [
+        "set a reminder",
+        "remind me at 5pm",
+        "set alarm for tomorrow",
+        "remind me to call doctor",
+        "set reminder for meeting",
+        "alert me in 30 minutes",
+        "remind me about gym",
+        "set a notification",
+        "schedule a reminder",
+        "remind me to take medicine",
+        "alarm at 7am",
+        "reminder for dentist appointment"
+      ],
+      "source": "mark39"
+    },
+    {
+      "tag": "youtube_video",
+      "patterns": [
+        "play lofi music on youtube",
+        "watch a tutorial on python",
+        "play videos of cats",
+        "show me trending videos",
+        "play a workout video",
+        "youtube music playlist",
+        "watch movie trailer",
+        "play podcast on youtube",
+        "show me cooking videos",
+        "play songs by eminem",
+        "youtube gaming stream",
+        "watch ted talk"
+      ],
+      "source": "mark39"
+    },
+    {
+      "tag": "screen_process",
+      "patterns": [
+        "what is on my screen",
+        "analyze what you see",
+        "describe my screen",
+        "look at my screen",
+        "what am i looking at",
+        "read what is on screen",
+        "check my webcam",
+        "look through camera",
+        "take a screenshot",
+        "read the text on screen",
+        "what does my screen show",
+        "vision mode"
+      ],
+      "source": "mark39"
+    },
+    {
+      "tag": "computer_settings",
+      "patterns": [
+        "increase volume",
+        "lower brightness",
+        "turn off wifi",
+        "enable dark mode",
+        "mute the computer",
+        "adjust volume to 50",
+        "screenshot my screen",
+        "scroll down the page",
+        "zoom in",
+        "switch tab",
+        "close window",
+        "restart computer",
+        "lock my screen",
+        "turn on bluetooth"
+      ],
+      "source": "mark39"
+    },
+    {
+      "tag": "file_controller",
+      "patterns": [
+        "list files in downloads",
+        "create a new folder",
+        "delete old files",
+        "move file to desktop",
+        "copy document to usb",
+        "rename this file",
+        "read my text file",
+        "find pdf files",
+        "show disk usage",
+        "organize my desktop",
+        "find largest files",
+        "create a text file"
+      ],
+      "source": "mark39"
+    },
+    {
+      "tag": "code_helper",
+      "patterns": [
+        "write a python script",
+        "explain this code",
+        "fix the bug in my code",
+        "run my python file",
+        "create a javascript function",
+        "build a flask app",
+        "write a sorting algorithm",
+        "debug this error",
+        "optimize my code",
+        "create a html page",
+        "write unit tests",
+        "document my functions"
+      ],
+      "source": "mark39"
+    },
+    {
+      "tag": "dev_agent",
+      "patterns": [
+        "build a full project",
+        "create a complete web app",
+        "make a todo app",
+        "develop a chatbot project",
+        "build me a portfolio website",
+        "create a rest api",
+        "make a machine learning project",
+        "develop a discord bot",
+        "build a scraper",
+        "create a complete game",
+        "make a data dashboard",
+        "build a login system"
+      ],
+      "source": "mark39"
+    },
+    {
+      "tag": "browser_control",
+      "patterns": [
+        "open google chrome",
+        "navigate to youtube",
+        "click the search button",
+        "fill the form",
+        "scroll down the webpage",
+        "open a new tab",
+        "go back in browser",
+        "refresh the page",
+        "open incognito mode",
+        "close the browser",
+        "switch to firefox",
+        "screenshot the webpage"
+      ],
+      "source": "mark39"
+    },
+    {
+      "tag": "flight_finder",
+      "patterns": [
+        "find flights to paris",
+        "book a ticket to new york",
+        "cheap flights to london",
+        "search flights from istanbul",
+        "one way ticket to dubai",
+        "round trip to tokyo",
+        "flight prices to berlin",
+        "find me a flight tomorrow",
+        "business class to miami",
+        "flights next week to rome",
+        "search for cheapest flights",
+        "book round trip ticket"
+      ],
+      "source": "mark39"
+    },
+    {
+      "tag": "game_updater",
+      "patterns": [
+        "update my steam games",
+        "install a game on epic",
+        "download fortnite",
+        "check steam updates",
+        "update all epic games",
+        "install valorant",
+        "list my installed games",
+        "update my games",
+        "download game update",
+        "check game download status",
+        "schedule game update",
+        "install steam game"
+      ],
+      "source": "mark39"
+    },
+    {
+      "tag": "shutdown_jarvis",
+      "patterns": [
+        "goodbye jarvis",
+        "stop the assistant",
+        "shut down",
+        "exit jarvis",
+        "close the assistant",
+        "turn off jarvis",
+        "bye",
+        "quit",
+        "stop listening",
+        "see you later",
+        "that is all",
+        "terminate",
+        "power off jarvis"
+      ],
+      "source": "mark39"
+    }
+  ]
+}
